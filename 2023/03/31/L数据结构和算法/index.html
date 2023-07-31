@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="The Redefine Team">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/03/31/l数据结构和算法/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hexo">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="http://example.com2023/03/31/L数据结构和算法/">
+    <meta property="og:image" content="/images/redefine-logo.svg">
+    <meta property="og:site_name" content="Theme Redefine">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hexo">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/redefine-logo.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-logo.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-logo.svg">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/redefine-logo.svg">
+    
+    <title>
+        
+        Theme Redefine
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/redefine-avatar.svg","favicon":"/images/redefine-logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"Theme Redefine","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.4","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":false,"audio":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]}}};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Theme Redefine
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular"></h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/redefine-avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">The Redefine Team</span>
+                            
+                                <span class="author-label">lol</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-03-31 12:51:17</span>
+        <span class="mobile">2023-03-31 12:51</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-03-31 12:51:16</span>
+            <span class="mobile">2023-03-31 12:51</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h1><h2 id="一、枚举"><a href="#一、枚举" class="headerlink" title="一、枚举"></a>一、枚举</h2><h3 id="1、什么是枚举算法？"><a href="#1、什么是枚举算法？" class="headerlink" title="1、什么是枚举算法？"></a>1、什么是枚举算法？</h3><p>​    枚举算法也叫穷举算法，最大的特点是在面对任何情况时会尝试每一种解决方法。在进行归纳推力时，如果逐个考察了某类事件的所有可能情况，因而得出一般结论，那么这个结论是可靠的，这种归纳方法叫枚举法</p>
+<h3 id="2、枚举算法的基础"><a href="#2、枚举算法的基础" class="headerlink" title="2、枚举算法的基础"></a>2、枚举算法的基础</h3><p>​    <strong>枚举算法的思想是：</strong>将问题的所有可能得答案一一列举，然后根据条件判断是否合适，保留合适的，丢弃不合适的。</p>
+<p><code>pyhton</code>中一般用<code>while</code>循环或者if语句实现。</p>
+<p>使用枚举算法的基本思路：</p>
+<ol>
+<li>确定枚举对象、枚举范围和判定条件。</li>
+<li>逐一列举可能得解，验证每个解是否是问题的解一般情况下，按照下面的三个步骤进行：</li>
+</ol>
+<p>（1）解的可能范围，不能遗漏任何一个真正的解，也要避免有重复。</p>
+<p>（2）判断是否是真正解的方法</p>
+<p>（3）使可能解的范围降至最小，以便提高解决问题的效率</p>
+<h2 id="二、递推"><a href="#二、递推" class="headerlink" title="二、递推"></a>二、递推</h2><h3 id="1、什么是递推？"><a href="#1、什么是递推？" class="headerlink" title="1、什么是递推？"></a>1、什么是递推？</h3><p>​    递推算法是通过已知条件，利用特定关系得出中间推论，直至得到结果的算法。递推算法分为顺推和逆推两种。动态规划</p>
+<h4 id="（1）顺推法"><a href="#（1）顺推法" class="headerlink" title="（1）顺推法"></a>（1）顺推法</h4><p>​    所谓顺推法是从已知条件出发，逐步推算出要解决的问题的方法叫顺推。</p>
+<p>例如：求阶层</p>
+<p>递推法，就是递增法，时间复杂度是 O(n)。</p>
+<h4 id="（2）逆推法"><a href="#（2）逆推法" class="headerlink" title="（2）逆推法"></a>（2）逆推法</h4><p>​    逆推法是从已知问题的结果出发，用迭代表达式逐步推算出问题的开始的条件，即顺推法的逆过程，称为逆推。</p>
+<h3 id="2、递归函数"><a href="#2、递归函数" class="headerlink" title="2、递归函数"></a>2、递归函数</h3><h4 id="（1）递归算法"><a href="#（1）递归算法" class="headerlink" title="（1）递归算法"></a>（1）递归算法</h4><p>​    递归算法（recursion algorithm）是指一种通过重复将问题分解为同类的子问题而解决问题的方法。递归完全可以取代循环</p>
+<blockquote>
+<p>优点：结构层次很清晰，易于理解。<br>缺点：在调用的过程中，每一层调用都需要保存临时性变量和返回地址、传递参数，因此执行效率低，还有可能会造成栈溢出。</p>
+</blockquote>
+<p>如果一个函数在内部调用了自身，这个函数就被称为递归函数。</p>
+<p>​    写法最简洁，但是效率最低，会出现大量的重复计算，时间复杂度O（1.618^n），而且最深度1000。</p>
+<p>​    使用递归函数需要注意防止递归深度溢出，在Python中，通常情况下，这个深度是1000层，超过将抛出异常。函数递归调用是通过栈（stack）实现的，每当进入一个递归时，栈就会加一层，每当函数返回一次，栈就会减一层。由于栈的大小不是无限的，所以，递归调用的次数过多，会导致栈溢出。</p>
+<h4 id="（2）尾递归"><a href="#（2）尾递归" class="headerlink" title="（2）尾递归"></a>（2）尾递归</h4><p>​    尾递归是指递归函数在调用自身时直接传递其状态值。在这些语言中尾部递归不会占用调用堆栈空间。</p>
+<h4 id="（3）递归与递推的比较"><a href="#（3）递归与递推的比较" class="headerlink" title="（3）递归与递推的比较"></a>（3）递归与递推的比较</h4><p>​    使用递推写法的计算方式是自底向上，即从边界开始，不断向上解决问题，直到解决了目标问题；<br>而使用递归写法的计算方式是自顶向下， 即从目标问题开始，将它分解成子问题的组合，直到分解至边界为止。<br>相对于递归算法，递推算法免除了数据进出栈的过程，也就是说，不需要函数不断的向边界值靠拢，而直接从边界出发，直到求出函数值。递推的效率要高一些，在可能的情况下应尽量使用递推。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>遇到需要进行多层循环或者根本不清楚循环层数的场景，递归就很有用了，只要确定了终止条件和递归方程就可以实现遍历。</p>
+<p>针对尾递归优化的语言可以通过尾递归防止栈溢出，尾递归事实上和循环是等价的。</p>
+<p>Python标准的解释器没有针对尾递归做优化，任何递归函数都存在栈溢出的问题。</p>
+<h2 id="三、分治算法"><a href="#三、分治算法" class="headerlink" title="三、分治算法"></a>三、分治算法</h2><h3 id="1、什么是分治算法？"><a href="#1、什么是分治算法？" class="headerlink" title="1、什么是分治算法？"></a>1、什么是分治算法？</h3><p>​     分治算法就是对一个问题采取各个击破的方法，将一个规模为N的问题分解为K个规模较小的子问题，这些子问题相互独立且与原问题性质相同。只要求出子问题的解，就可得到原问题的解。</p>
+<h3 id="2、为什么需要分治算法？"><a href="#2、为什么需要分治算法？" class="headerlink" title="2、为什么需要分治算法？"></a>2、为什么需要分治算法？</h3><p> 在编程过程中，经常遇到处理数据相当多、求解过程比较复杂、直接求解比较耗时的问题。</p>
+<p>   在求解这类问题时，可以采用各个击破的方法。</p>
+<h3 id="3、分治算法基础"><a href="#3、分治算法基础" class="headerlink" title="3、分治算法基础"></a>3、分治算法基础</h3><p>​     具体做法是：先把这个问题分解成几个较小的子问题，找到求出这几个子问题的解法后，再找到合适的方法，把它们组合成求整个大问题的解。如果这些子问题还是比较大，可以继续把它们分成几个更小的子问题，以此类推，直至可以直接求出解为止。这就是分治算法的基本思想</p>
+<h3 id="4、分治算法的解题一般步骤"><a href="#4、分治算法的解题一般步骤" class="headerlink" title="4、分治算法的解题一般步骤"></a>4、分治算法的解题一般步骤</h3><p>（1）分解，将要解决的问题划分为若干个规模较小的同类问题。</p>
+<p>（2）求解，当子问题划分的足够小时，用较简单的方法解决。</p>
+<p>（3）合并，按原问题的要求，将子问题的逐层合并构成原问题的解。</p>
+<h2 id="四、动态规划（DP）"><a href="#四、动态规划（DP）" class="headerlink" title="四、动态规划（DP）"></a>四、动态规划（DP）</h2><h3 id="1、什么是动态规划？"><a href="#1、什么是动态规划？" class="headerlink" title="1、什么是动态规划？"></a>1、什么是动态规划？</h3><p>​    动态规划，无非就是利用<strong>历史记录</strong>，来避免我们的重复计算。而这些<strong>历史记录</strong>，我们得需要一些<strong>变量</strong>来保存，一般是用<strong>一维数组</strong>或者<strong>二维数组</strong>来保存。下面我们先来讲下做动态规划题很重要的三个步骤</p>
+<h3 id="2、动态规划的三大步骤"><a href="#2、动态规划的三大步骤" class="headerlink" title="2、动态规划的三大步骤"></a>2、动态规划的三大步骤</h3><ol>
+<li>定义<strong>数组元素的含义</strong>，上面说了，我们会用一个数组，来保存历史数组，假设用一维数组 dp[] 吧。这个时候有一个非常非常重要的点，就是规定你这个数组元素的含义，例如你的 dp[i] 是代表什么意思？</li>
+<li>找出<strong>数组元素之间的关系式</strong>，我觉得动态规划，还是有一点类似于我们高中学习时的<strong>归纳法</strong>的，当我们要计算 dp[n] 时，是可以利用 dp[n-1]，dp[n-2]…..dp[1]，来推出 dp[n] 的，也就是可以利用<strong>历史数据</strong>来推出新的元素值，所以我们要找出数组元素之间的关系式，例如 dp[n] = dp[n-1] + dp[n-2]，这个就是他们的关系式了。而这一步，也是最难的一步，后面我会讲几种类型的题来说。</li>
+</ol>
+<blockquote>
+<p>学过动态规划的可能都经常听到<strong>最优子结构</strong>，把大的问题拆分成小的问题，说时候，最开始的时候，我是对<strong>最优子结构</strong>一梦懵逼的。估计你们也听多了，所以这一次，我将<strong>换一种形式来讲，不再是各种子问题，各种最优子结构</strong>。所以大佬可别喷我再乱讲，因为我说了，这是我自己平时做题的套路。</p>
+</blockquote>
+<p>​    3.找出<strong>初始值</strong>。学过<strong>数学归纳法</strong>的都知道，虽然我们知道了数组元素之间的关系式，例如 dp[n] = dp[n-1] + dp[n-2]，我们可以通过 dp[n-1] 和 dp[n-2] 来计算 dp[n]，但是，我们得知道初始值啊，例如一直推下去的话，会由 dp[3] = dp[2] + dp[1]。而 dp[2] 和 dp[1] 是不能再分解的了，所以我们必须要能够直接获得 dp[2] 和 dp[1] 的值，而这，就是<strong>所谓的初始值</strong>。由了<strong>初始值</strong>，并且有了<strong>数组元素之间的关系式</strong>，那么我们就可以得到 dp[n] 的值了，而 dp[n] 的含义是由你来定义的，你想<strong>求什么，就定义它是什么</strong>，这样，这道题也就解出来了。</p>
+<h2 id="五、贪心"><a href="#五、贪心" class="headerlink" title="五、贪心"></a>五、贪心</h2><h3 id="1、什么是贪心？"><a href="#1、什么是贪心？" class="headerlink" title="1、什么是贪心？"></a>1、什么是贪心？</h3><p>​    贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择，就能得到问题的答案。</p>
+<h3 id="2、贪心算法的一般步骤"><a href="#2、贪心算法的一般步骤" class="headerlink" title="2、贪心算法的一般步骤"></a>2、贪心算法的一般步骤</h3><p>​    贪心算法需要充分挖掘题目中条件，没有固定的模式，解决有贪心算法需要一定的直觉和经验。</p>
+<p>​    贪心算法不是对所有问题都能得到整体最优解。能使用贪心算法解决的问题具有 无后效性，即某阶段状态一旦确定，就不收后阶段决策的影响</p>
+<h2 id="六、回溯算法"><a href="#六、回溯算法" class="headerlink" title="六、回溯算法"></a>六、回溯算法</h2><h3 id="1、什么是回溯算法？"><a href="#1、什么是回溯算法？" class="headerlink" title="1、什么是回溯算法？"></a>1、什么是回溯算法？</h3><p>​    从本质上来说，回溯算法就是深度优先搜索（DFS)。而且，回溯算法和动态规划也很像，它们都是“分而治之”的思想，但是动态规划具有重叠子问题的特性，可以通过 dp table优化将递归树大幅剪枝。而那些无法大幅剪枝，只能暴力求解的动态规划就是回溯算法了。</p>
+<h3 id="2、回溯算法的一般步骤"><a href="#2、回溯算法的一般步骤" class="headerlink" title="2、回溯算法的一般步骤"></a>2、回溯算法的一般步骤</h3><p>​    对于回溯算法来说，最重要的是“路径”和“选择”，路径就是已经做出来的选择的集合。当回溯算法进行到最后时，如果其满足约束条件，那就把它加入解集，否则，回溯（这也是回溯算法的由来）。</p>
+<blockquote>
+<p>对于回溯算法来说，一般是如下模式：</p>
+<p>results = []<br>def backtrack(路径，选择列表):<br>if 路径结束，满足约束条件：<br>results.append(路径)<br>return<br>if 路径结束，不满足约束条件:<br>return<br>for 选择 in 选择列表：<br>更新路径和选择列表<br>backtrack（新的路径，新的选择列表）</p>
+</blockquote>
+<h2 id="七、分支限界"><a href="#七、分支限界" class="headerlink" title="七、分支限界"></a>七、分支限界</h2><h3 id="1、什么是分支限界？"><a href="#1、什么是分支限界？" class="headerlink" title="1、什么是分支限界？"></a>1、什么是分支限界？</h3><ul>
+<li>分支限界法常以广度优先或以最小耗费（最大效益）优先的方式搜索问题的解空间树。</li>
+<li>在分支限界法中，每一个活结点只有一次机会成为扩展结点。活结点一旦成为扩展结点，就一次性产生其所有儿子结点。在这些儿子结点中，导致不可行解或导致非最优解的儿子结点被舍弃，其余儿子结点被加入活结点表中。</li>
+<li>此后，从活结点表中取下一结点成为当前扩展结点，并重复上述结点扩展过程。这个过程一直持续到找到所需的解或活结点表为空时为止。</li>
+</ul>
+<h3 id="2、常见的两种分支限界"><a href="#2、常见的两种分支限界" class="headerlink" title="2、常见的两种分支限界"></a>2、常见的两种分支限界</h3><ol>
+<li>队列式(FIFO)分支限界法<br>按照队列先进先出（FIFO）原则选取下一个节点为扩展节点。</li>
+<li>优先队列式分支限界法<br>按照优先队列中规定的优先级选取优先级最高的节点成为当前扩展节点。</li>
+</ol>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：</li>
+        <li>Post author：The Redefine Team</li>
+        <li>Create time：2023-03-31 12:51:17</li>
+        <li>
+            Post link：https://redefine.ohevan.com/2023/03/31/L数据结构和算法/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/04/11/Spring%E6%A1%86%E6%9E%B6/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/03/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/index/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95"><span class="nav-text">数据结构和算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%9E%9A%E4%B8%BE"><span class="nav-text">一、枚举</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E6%9E%9A%E4%B8%BE%E7%AE%97%E6%B3%95%EF%BC%9F"><span class="nav-text">1、什么是枚举算法？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%9E%9A%E4%B8%BE%E7%AE%97%E6%B3%95%E7%9A%84%E5%9F%BA%E7%A1%80"><span class="nav-text">2、枚举算法的基础</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%80%92%E6%8E%A8"><span class="nav-text">二、递推</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E9%80%92%E6%8E%A8%EF%BC%9F"><span class="nav-text">1、什么是递推？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%EF%BC%881%EF%BC%89%E9%A1%BA%E6%8E%A8%E6%B3%95"><span class="nav-text">（1）顺推法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%EF%BC%882%EF%BC%89%E9%80%86%E6%8E%A8%E6%B3%95"><span class="nav-text">（2）逆推法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0"><span class="nav-text">2、递归函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%EF%BC%881%EF%BC%89%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95"><span class="nav-text">（1）递归算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%EF%BC%882%EF%BC%89%E5%B0%BE%E9%80%92%E5%BD%92"><span class="nav-text">（2）尾递归</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%EF%BC%883%EF%BC%89%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-text">（3）递归与递推的比较</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="nav-text">三、分治算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%EF%BC%9F"><span class="nav-text">1、什么是分治算法？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%EF%BC%9F"><span class="nav-text">2、为什么需要分治算法？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80"><span class="nav-text">3、分治算法基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%9A%84%E8%A7%A3%E9%A2%98%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4"><span class="nav-text">4、分治算法的解题一般步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88DP%EF%BC%89"><span class="nav-text">四、动态规划（DP）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9F"><span class="nav-text">1、什么是动态规划？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%9A%84%E4%B8%89%E5%A4%A7%E6%AD%A5%E9%AA%A4"><span class="nav-text">2、动态规划的三大步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E8%B4%AA%E5%BF%83"><span class="nav-text">五、贪心</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E8%B4%AA%E5%BF%83%EF%BC%9F"><span class="nav-text">1、什么是贪心？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4"><span class="nav-text">2、贪心算法的一般步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95"><span class="nav-text">六、回溯算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%9F"><span class="nav-text">1、什么是回溯算法？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4"><span class="nav-text">2、回溯算法的一般步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E5%88%86%E6%94%AF%E9%99%90%E7%95%8C"><span class="nav-text">七、分支限界</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF%E9%99%90%E7%95%8C%EF%BC%9F"><span class="nav-text">1、什么是分支限界？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%88%86%E6%94%AF%E9%99%90%E7%95%8C"><span class="nav-text">2、常见的两种分支限界</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">The Redefine Team</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br> 
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.1.4</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/toc-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
